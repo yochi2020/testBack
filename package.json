@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npx tsc && NODE_ENV=production ts-node -r tsconfig-paths/register ./dist/index.js ",
+    "start": "nodemon",
     "dev": "nodemon",
+    "build":"npx tsc && NODE_ENV=production ts-node -r tsconfig-paths/register ./dist/index.js ",
     "lint:check": "npx eslint .",
     "lint:format": "npx eslint . --fix",
     "version:check": "yarn outdated",
